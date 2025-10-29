@@ -1,0 +1,110 @@
+
+
+header {
+
+
+    background-color: #395c3cd2;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #304b3e;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+a {
+  color: rgb(255, 255, 255); /* меняет цвет текста */
+}
+
+nav a {
+  margin: 0 15px; /* отступ справа и слева */
+}
+
+.container {
+  max-width: 800px;          /* ограничивает ширину текста для удобного чтения */
+  margin: 0 auto;            /* горизонтальное центрирование блока */
+  text-align: center;        /* выравнивание текста по центру */
+  padding: 20px;             /* отступы внутри контейнера */
+  line-height: 1.6;          /* расстояние между строками */
+  font-size: 18px;           /* читаемый размер текста */
+  background-color: #f0f0f0; /* опционально, фон для контраста */
+  border-radius: 10px;       /* скругленные углы */
+}
+
+
+footer {
+    background-color: #395c3cd2;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+/* Общие стили карусели */
+#myCarousel {
+  max-width: 800px;          /* ширина карусели */
+  margin: 30px auto;         /* центрирование на странице */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Слайды */
+#myCarousel .carousel-inner .item img {
+  width: 100%;             /* растягиваем на всю ширину контейнера */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Индикаторы (точки снизу) */
+#myCarousel .carousel-indicators li {
+  background-color: #bbb;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+}
+
+#myCarousel .carousel-indicators .active {
+  background-color: #717171;
+}
+
+/* Стрелки управления */
+#myCarousel .carousel-control {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+#myCarousel .carousel-control:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Скроем sr-only текст */
+#myCarousel .sr-only {
+  position: absolute;
+  left: -10000px;
+}
